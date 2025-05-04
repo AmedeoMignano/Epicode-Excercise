@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Basics</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1,h4{
+            text-align: center; color: white;
+        }
+       div {
+            padding-top: 10px;
+            text-align: center;
+            color: white;
+        }
+        fieldset{
+            color: white;
+            text-align: center;
+        }
+        button{
+            text-align: center;
+        }
+        img{
+            text-align: center; border-radius: 50%; width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="logo.png" alt="Logo">
+    </div>
+    <h1>
+        Iscriviti per <br>
+        iniziare <br>
+        ad ascoltare <br>
+        la tua musica preferita
+     </h1>
+    <form onsubmit="alert ('Registrazione Inviata')">
+        <div>
+            <input type="text" placeholder="Nome">
+        </div>
+        <div>
+            <input type="text" placeholder="Cognome">
+        </div>
+        <div>
+            <input type="text" placeholder="Nome">
+        </div>
+        <div>
+            <input type="email" placeholder="E-mail">
+        </div>
+        <div>
+            <input type="date" placeholder="Data di Nascita">
+        </div>
+        <div>
+            <input type="number" placeholder="Numero di telefono">
+        </div>
+        <fieldset>
+            <legend>Seleziona i tuoi generi preferiti</legend>
+            <div>
+                <input type="checkbox" id="Pop" name="POP">
+                <label for="POP">Pop</label>
+                <input type="checkbox" id="Jazz" name="Jazz">
+                <label for="Jazz">Jazz</label>
+                <input type="checkbox" id="Rock" name="Rock">
+                <label for="Rock">Rock</label>
+                <input type="checkbox" id="Metal" name="Metal">
+                <label for="Metal">Metal</label>
+                <input type="checkbox" id="Funk" name="Funk">
+                <label for="Funk">Funk</label>
+                <input type="checkbox" id="Classical" name="Classical">
+                <label for="Classical">Classical</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Hip-Hop" name="Hip-Hop">
+                <label for="Hip-Hop">Hip-Hop</label>
+                <input type="checkbox" id="Country" name="Country">
+                <label for="Country">Country</label>
+                <input type="checkbox" id="Eletronic" name="Eletronic>
+                <label for="Eletronic">Eletronic</label>
+                <input type="checkbox" id="R&B" name="R&B">
+                <label for="R&B">R&B</label>
+                <input type="checkbox" id="Country" name="Country">
+                <label for="Country">Country</label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="password" placeholder="La tua password">
+        </div>
+        <div>
+            <input type="password" placeholder="Conferma Password">
+        </div>
+        <div>
+            <input type="radio" id="Termini e Condizioni">
+            <label for="Termini e Condizioni"> Accetto i termini e condizioni</label>
+        </div>
+        <div>
+            <button type="submit">
+                Registrati!
+            </button>
+        </div>
+    </form>
+</body>
+</html>
